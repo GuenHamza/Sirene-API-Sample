@@ -1,0 +1,12 @@
+server:
+  port : 8089
+izicap:
+  sirene:
+    api:
+      endpoint: https://entreprise.data.gouv.fr/api/sirene/v1/siret/
+      parent-node-name: etablissement
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
